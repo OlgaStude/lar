@@ -249,6 +249,7 @@ a, p, h2, h1, div{
             top: 50%;
             transform: translateY(-50%);
             z-index: 100;
+            transition-duration: 0.4s;
         }
         .slider__btn-left{
             left: 285px;
@@ -735,4 +736,199 @@ a, p, h2, h1, div{
                 top: 173px;
                 transform: translateX(-50%);
             }
+}
+
+
+/* reviews */
+
+
+#reviews{
+    background-image: url('img/Registration_gradient.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#reviews_container{
+    text-align: center;
+    height: 641px;
+    padding-top: 112px;
+}
+    #reviews_container h1{
+        font-size: 64px;
+    }
+#review_mobile{
+    display: none;
+}
+#review{
+    height: 290px;
+    width: 1115px;
+    background-color: #fff;
+    box-shadow: 0px 8px 13px 2px rgba(0, 0, 0, 0.25);
+    overflow: visible;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 63px 65px;
+    margin-top: 39px;
+    box-sizing: border-box;
+    position: relative;
+}
+    #review > p{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38.62px;
+        text-align: left;
+        width: 707px;
+    }
+#user{
+    text-align: right;
+    margin-right: 30px;
+}
+    #user img{
+        width: 104px;
+        margin-right: 10px;
+        margin-bottom: 24px;
+    }
+    #user p{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38.62px;
+    }
+#rewiev_btn_left, #rewiev_btn_right{
+    border: none;
+    border-radius: 100px;
+    width: 65px;
+    height: 64px;
+    background-color: rgb(0, 0, 0, 0.49);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.5s;
+}
+    #rewiev_btn_left:hover, #rewiev_btn_right:hover{
+        background-color: rgb(0, 0, 0, 0.69);
+    }
+#rewiev_btn_left{
+    left: -50px;
+}
+#rewiev_btn_right{
+    right: -40px;
+}
+    #rewiev_btn_left img{
+        margin-right: 3px;
+    }
+    #rewiev_btn_right img{
+        margin-left: 10px;
+    }
+
+@media screen and (min-width: 1600px) {
+    #reviews{
+        background-image: url('img/big_format/Registration_gradient.png');
+    }
+    #reviews_container{
+        height: 741px;
+        padding-top: 152px;
+    }
+        #reviews_container h1{
+            font-size: 74px;
+        }
+    
+    #review{
+        height: 330px;
+        width: 1315px;
+        padding: 63px 65px;
+        margin-top: 39px;
+    }
+        #review > p{
+            font-size: 30px;
+            line-height: 48.62px;
+            width: 807px;
+        }
+    #user{
+        margin-right: 35px;
+    }
+        #user img{
+            width: 124px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+        #user p{
+            font-weight: 700;
+            font-size: 30px;
+            overflow: hidden;
+            line-height: 38.62px;
+        }
+    #rewiev_btn_left, #rewiev_btn_right{
+        width: 75px;
+        height: 74px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 1365px) {
+    #reviews{
+        background-image: url('img/mobile/Registration_gradient.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    #reviews_container{
+        height: 276px;
+        padding-top: 45px;
+    }
+        #reviews_container h1{
+            font-size: 28px;
+        }
+    
+    #review{
+        display: none;
+    }
+    #review_mobile{
+        display: block;
+        margin-top: 21px;
+        margin-left: -290px;
+        margin-right: -294px;
+    }
+        #reviews .slider__item{
+            background-image: none;
+            background-color: #fff;
+            display: flex;
+            width: 299px;
+            height: 107px;
+            padding: 14px 22px;
+            overflow: hidden;
+            box-shadow: none;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #reviews .center .slider__item{
+            width: 339px;
+            height: 127px;
+            padding: 22px 14px;
+            overflow: visible;
+            margin-top: 0;
+            margin-bottom: 30px;
+            box-shadow: 0px 8px 13px 2px rgba(0, 0, 0, 0.25);
+            transition: none;
+        }
+        .user{
+            margin-left: 20px;
+        }
+        .user p{
+            text-align: center;
+            font-size: 12px;
+            margin-right: 10px;
+            font-weight: 700;
+            width: 48px;
+            overflow: visible;
+        }
+            #reviews .slider__item > p{
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 19.31px;
+                text-align: justify;
+            }
+            #reviews .slider__item img{
+                width: 48px;
+                margin-bottom: 10px;
+                margin-right: 0px;
+            } 
 }
