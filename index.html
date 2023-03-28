@@ -17,9 +17,9 @@
             <div id="upper_part_header">
                 <img src="img/logo.png" alt="logo">
                 <nav id="nav">
-                    <a href="#">галерея</a>
-                    <a href="#">экскурсия</a>
-                    <a href="#">отзывы</a>
+                    <a id="gal_a" href="#">галерея</a>
+                    <a id="t_a" href="#">экскурсия</a>
+                    <a id="rev_a" href="#">отзывы</a>
                 </nav>
                 
                 <img id="mobile_menu" style="height: 24px;" src="img/mobile/Frame 1.png" alt="">
@@ -163,6 +163,65 @@
             </div>
         </div>
     </section>
+
+
+    <section id="registration">
+        <div id="registration_container">
+            <div class="small_format">
+                <h1>Начни планировать поездку уже сейчас!</h1>
+            </div>
+            <div id="registration_form">
+                <form action="">
+                    <div class="input">
+                        <input type="text" placeholder="почта" name="email">
+                        <p>E-mail введён некорректно</p>
+                    </div class="input">
+                    <div class="input">
+                        <input type="text" placeholder="имя" name="name">
+                    <p>В имени должны быть только буквы</p>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="фамилия" name="surname">
+                    <p>В фамилии должны быть только буквы</p>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="пароль" name="password">
+                    <p>Пароль должен быть не менее 8 символов</p>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="повтор пароля" name="password_repeat">
+                    <p>Пароли не совпадают</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn_front">зарегистрироваться</div>
+                        <div class="btn_back"></div>
+                    </div>
+                </form>
+            </div>
+            <h1 class="big_format">Начни планировать поездку уже сейчас!</h1>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="footer_wrapper">
+            <img src="img/logo.png" alt="">
+            <div id="nav_footer">
+                <p><a href="#">Галерея</a></p>
+                <p><a href="#">Экскурсии</a></p>
+                <p><a href="#">Отзывы</a></p>
+            </div>
+            <div id="footer_socials">
+                <div>
+                    <a href="#"><img src="img/telegram_logo.png" id="header_telegram" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/VK_logo.png" id="header_vk" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- <span>Суворина О РП-31</span> -->
+    </footer>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

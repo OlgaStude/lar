@@ -9,8 +9,6 @@ $('.owl-carousel').owlCarousel({
         1599: {
             margin: 170,
         }
-        
-        
     }
 });
 $('.slider__btn-left').click(function() {
@@ -45,18 +43,73 @@ $('#rewiev_btn_right').click(function(){
     $('#user p').html(user_names[index]);
  })
 
- $('.owl_review_wrapper').owlCarousel({
-    center: true,
-    items:2,
-    loop: true,
-    mouseDrag: true,
-    margin: 20,
-    responsive: {
-        
-        1599: {
-            margin: 170,
+ $('form .btn').click(function(){
+    if($('input[name="email"]').val() == '' || !$('input[name="email"]').val().match(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)){
+        $('input[name="email"]').css('border-color', 'red');
+        if($('input[name="email"]').val() != ''){
+            $('input[name="email"]').next().css('display', 'block');
         }
-        
-        
+    }else{
+        $('input[name="email"]').css('border-color', '#071434')
+        $('input[name="email"]').next().css('display', 'none');
     }
-});
+
+    if($('input[name="name"]').val() == '' || !$('input[name="name"]').val().match(/^[a-zA-Z]+$/)){
+        $('input[name="name"]').css('border-color', 'red')
+        if($('input[name="name"]').val() != ''){
+            $('input[name="name"]').next().css('display', 'block');
+        }
+    }else{
+        $('input[name="name"]').css('border-color', '#071434')
+        $('input[name="name"]').next().css('display', 'none');
+    }
+
+    if($('input[name="surname"]').val() == '' || !$('input[name="surname"]').val().match(/^[a-zA-Z]+$/)){
+        $('input[name="surname"]').css('border-color', 'red')
+        if($('input[name="surname"]').val() != ''){
+            $('input[name="surname"]').next().css('display', 'block');
+        }
+    }else{
+        $('input[name="surname"]').css('border-color', '#071434')
+        $('input[name="surname"]').next().css('display', 'none');
+    }
+
+    if($('input[name="password"]').val() == '' || $('input[name="password"]').val().length < 8){
+        $('input[name="password"]').css('border-color', 'red')
+        if($('input[name="password"]').val() != ''){
+            $('input[name="password"]').next().css('display', 'block');
+        }
+    }else{
+        $('input[name="password"]').css('border-color', '#071434')
+        $('input[name="password"]').next().css('display', 'none');
+        if($('input[name="password_repeat"]').val() == '' || $('input[name="password"]').val() != ($('input[name="password_repeat"]').val())){
+            $('input[name="password_repeat"]').css('border-color', 'red')
+            if($('input[name="password_repeat"]').val() != ''){
+                $('input[name="password_repeat"]').next().css('display', 'block');
+            }
+        }else{
+            $('input[name="password_repeat"]').css('border-color', '#071434')
+            $('input[name="password_repeat"]').next().css('display', 'none');
+        }
+    }
+
+ })
+
+ $('#gal_a').click(function(e){
+    e.preventDefault();
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('#gallery').position().top
+    },700);
+ })
+ $('#t_a').click(function(e){
+    e.preventDefault();
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('#tours').position().top
+    },1000)
+ })
+ $('#rev_a').click(function(e){
+    e.preventDefault();
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('#reviews').position().top
+    },1300)
+ })

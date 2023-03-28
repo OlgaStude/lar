@@ -4,7 +4,7 @@
     src: url('fonts/ZektonBd-Bold.ttf');
 }
 
-a, p, h2, h1, div{
+a, p, h2, h1, div, input{
     font-family: "Nunito";
 }
 
@@ -931,4 +931,344 @@ a, p, h2, h1, div{
                 margin-bottom: 10px;
                 margin-right: 0px;
             } 
+}
+
+
+/* Registration */
+
+#registration{
+    height: 896px;
+    width: 1366px;
+    background-image: url('img/registration_background.png');
+}
+    #registration_container{
+        display: flex;
+        justify-content: space-between;
+        padding: 97px 64px;
+    }  
+        #registration_form{
+            width: 580px;
+            height: 666px;
+            background-color: #fff;
+            border: 6px solid #071434;
+        }
+            #registration_form form{
+                width: 381px;
+                overflow: visible;
+                padding-top: 73px;
+                padding-left: 96px;
+            }
+                form .input{
+                    width: 381px;
+                    height: 60px;
+                    margin-bottom: 37px;
+                }
+                form input{
+                    width: 381px;
+                    height: 60px;
+                    padding: 0;
+                    line-height: 0;
+                    box-sizing: border-box;
+                    border: 2px solid #071434;
+                    font-size: 22px;
+                    padding-left: 32px;
+                }
+                #registration .btn_front{
+                    width: 368px;
+                    height: 68px;
+                    padding-top: 7px;
+                    font-size: 31px;
+                    border: 4px solid #071434;
+                    color: white;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-36%);
+                }
+                #registration .btn_back{
+                    border: 1px solid #071434;
+                    width: 368px;
+                    height: 68px;
+                    top: -6px;
+                    left: 2px;
+                }
+                #registration .btn:hover .btn_front{
+                    left: 48%;
+                }
+                #registration .btn:hover .btn_back{
+                    left: 4px;
+                }
+                form p{
+                    display: none;
+                    color: red;
+                    padding-top: 5px;
+                    padding-left: 5px;
+                }
+    #registration h1{
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 70.44px;
+        text-align: right;
+        width: 601px;
+        color: white;
+        margin-top: -34px;
+    }
+    .small_format{
+        display: none;
+    }
+
+@media screen and (min-width: 1600px){
+    #registration{
+        height: 1024px;
+        width: 1600px;
+        background-image: url('img/big_format/registration_background.png');
+    }
+        #registration_container{
+            padding: 117px 84px;
+        }  
+            #registration_form{
+                width: 680px;
+                height: 766px;
+            }
+                #registration_form form{
+                    width: 541px;
+                    padding-top: 93px;
+                    padding-left: 116px;
+                }
+                    form .input{
+                        width: 100%;
+                        height: 70px;
+                    }
+                    form input{
+                        width: 100%;
+                        height: 70px;
+                        font-size: 26px;
+                    }
+                    #registration .btn_front{
+                        width: 408px;
+                        padding-top: 7px;
+                        font-size: 33px;
+                        left: 50%;
+                        transform: translate(-48%);
+                    }
+                    #registration .btn_back{
+                        border: 1px solid #071434;
+                        width: 408px;
+                        top: -6px;
+                    }
+                    #registration .btn:hover .btn_back{
+                        left: 7px;
+                    }
+                    form p{
+                        display: none;
+                        color: red;
+                        padding-top: 5px;
+                        padding-left: 5px;
+                    }
+        #registration h1{
+            font-size: 66px;
+            line-height: 80.44px;
+            width: 701px;
+            margin-top: -44px;
+        }
+}
+@media screen and (min-width: 375px) and (max-width: 1365px) {
+    #registration{
+        height: 507px;
+        width: 375px;
+        background-image: url('img/mobile/registration_background.png');
+    }
+        #registration_container{
+            display: block;
+            padding: 11px 18px;
+        }  
+            #registration_form{
+                width: 339px;
+                height: 389px;
+                border: 4px solid #071434;
+            }
+                #registration_form form{
+                    width: 247px;
+                    padding-top: 27px;
+                    padding-left: 42px;
+                }
+                    form .input{
+                        width: 247px;
+                        height: 35px;
+                        margin-bottom: 22px;
+                    }
+                    form input{
+                        width: 100%;
+                        height: 35px;
+                        font-size: 18px;
+                        padding-left: 22px;
+                    }
+                    #registration .btn{
+                        margin-top: 30px;
+                    }
+                    #registration .btn_front{
+                        width: 240px;
+                        height: 35px;
+                        padding-top: 2px;
+                        font-size: 18px;
+                        border: 2px solid #071434;
+                        left: 50%;
+                        transform: translate(-40%);
+                    }
+                    #registration .btn_back{
+                        border: 1px solid #071434;
+                        width: 240px;
+                        height: 35px;
+                        top: -3px;
+                        left: 2px;
+                    }
+                    #registration .btn:hover .btn_front{
+                        left: 48%;
+                    }
+                    #registration .btn:hover .btn_back{
+                        top: -6px;
+                        left: 3px;
+                    }
+                    form p{
+                        display: none;
+                        color: red;
+                        padding-top: 2px;
+                        padding-left: 5px;
+                        font-size: 12px;
+                    }
+        #registration h1{
+            font-size: 28px;
+            line-height: 32.87px;
+            width: 295px;
+            margin-top: 7px;
+            text-align: center;
+            margin-bottom: 11px;
+        }
+        .small_format{
+            display: block;
+            padding: 0 24px;
+        }
+        .big_format{
+            display: none;
+        }
+}
+
+
+/* footer */
+
+footer{
+    width: 1366px;
+    height: 240px;
+    background-color: #071434;
+}
+    #footer_wrapper{
+        padding: 61px 97px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        #footer_wrapper > img{
+            width: 128px;
+            height: 96px;
+        }
+    #nav_footer{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 27px;
+        color: white;
+        font-size: 24px;
+        margin-left: 80px;
+    }
+        #nav_footer a, #nav_footer a:visited{
+            color: white;
+            text-decoration: NONE;
+        }
+    #footer_socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 42px;
+    }
+        #footer_socials div{
+            width: 67px;
+            height: 61px;
+            background-color: rgb(255, 255, 255, 0.37);
+            text-align: center;
+        }
+        #footer_socials div:first-child img{
+            margin-top: 5px;
+        }
+    footer span{
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+@media screen and (min-width: 1600px){
+    footer{
+        width: 1600px;
+        height: 240px;
+    }
+            #footer_wrapper > img{
+                width: 148px;
+                height: 116px;
+            }
+        #nav_footer{
+            column-gap: 37px;
+            font-size: 28px;
+        }
+        #footer_socials{
+            column-gap: 52px;
+        }
+            #footer_socials div{
+                width: 77px;
+                height: 71px;
+            }
+            #footer_socials div:first-child img{
+                margin-top: 10px;
+            }
+            #footer_socials div:last-child img{
+                margin-top: 5px;
+            }
+        footer span{
+            color: white;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+}
+@media screen and (min-width: 375px) and (max-width: 1365px) {
+    footer{
+        width: 375px;
+        height: 99px;
+    }
+        #footer_wrapper{
+            padding: 27px 29px;
+        }
+            #footer_wrapper > img{
+                width: 53px;
+                height: 39px;
+            }
+        #nav_footer{
+            display: none;
+        }
+        #footer_socials{
+            column-gap: 20px;
+        }
+            #footer_socials div{
+                width: 30px;
+                height: 28px;
+            }
+            #footer_socials img{
+                width: 28px;
+                height: 27px;
+            }
+            #footer_socials div:first-child img{
+                margin-top: 2px;
+                width: 22px;
+                height: 22px;
+            }
+        footer span{
+            color: white;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
 }
